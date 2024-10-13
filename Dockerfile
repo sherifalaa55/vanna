@@ -19,14 +19,5 @@ COPY . .
 # Expose the port Flask runs on
 EXPOSE 5000
 
-# Define environment variables (can be overridden by docker-compose)
-ENV OPENAI_API_KEY=your_default_api_key
-ENV MYSQL_HOST=mysql
-ENV MYSQL_DBNAME=z-saas
-ENV MYSQL_USER=vanna
-ENV MYSQL_PASSWORD=password
-ENV MYSQL_PORT=3306
-ENV OPENAI_MODEL=gpt-4
-
 # Run the application
 CMD ["python", "app.py"]
